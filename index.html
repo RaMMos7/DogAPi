@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Dog API</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+</head>
+<body>
+  <div class="base">
+    <div class="ontop">
+      <div class="top-item active">
+        <i class="fa-solid fa-square-poll-vertical"></i>
+        <span>Voting</span>
+      </div>
+
+      <div class="top-item">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <span>Breeds</span>
+      </div>
+
+      <div class="top-item" id="favsBtn">
+        <i class="fa-regular fa-heart"></i>
+        <span>Favs</span>
+      </div>
+      
+    </div>
+
+    <div class="center-image">
+      <img id="cachorosimagens" src="" alt="cachorros" />
+    </div>
+
+    <div id="favoritesSection" class="center-image"></div>
+
+    <div class="down">
+      <div class="icon-btn"><i class="fa-regular fa-heart"></i></div>
+      <div class="icon-btn"><i class="fa-regular fa-thumbs-up"></i></div>
+      <div class="icon-btn"><i class="fa-regular fa-thumbs-down"></i></div>
+    </div>
+
+    <div class="breed-search" style="display: none;">
+      <input type="text" id="breedInput" placeholder="Search for a breed..." />
+      <div id="breedResults" class="breed-results"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
